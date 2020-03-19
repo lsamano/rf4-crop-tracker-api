@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :flowers
   resources :hates
   resources :likes
   resources :crops, only: [:index]

@@ -243,3 +243,109 @@ dungeon_flower = Crop.create(
 )
 
 puts "Crops Seeded."
+
+# Flowers
+toyherb = Flower.create(
+  name: "toyherb",
+  grow_time: 4,
+  harvest_amount: 2,
+  store_level: 1
+)
+moondrop = Flower.create(
+  name: "moondrop",
+  grow_time: 7,
+  harvest_amount: 4,
+  store_level: 1
+)
+pink_cat = Flower.create(
+  name: "pink cat",
+  grow_time: 6,
+  harvest_amount: 3,
+  store_level: 1
+)
+charm_blue = Flower.create(
+  name: "charm blue",
+  grow_time: 8,
+  harvest_amount: 3,
+  store_level: 1
+)
+cherry_grass = Flower.create(
+  name: "cherry grass",
+  grow_time: 10,
+  harvest_amount: 4,
+  store_level: 1
+)
+lamp_grass = Flower.create(
+  name: "lamp grass",
+  grow_time: 16,
+  harvest_amount: 3,
+  store_level: 1
+)
+ironleaf = Flower.create(
+  name: "ironleaf",
+  grow_time: 21,
+  harvest_amount: 2,
+  store_level: 1
+)
+four_leaf_clover = Flower.create(
+  name: "4 leaf clover",
+  grow_time: 28,
+  harvest_amount: 3,
+  store_level: 1
+)
+fireflower = Flower.create(
+  name: "fireflower",
+  grow_time: 42,
+  harvest_amount: 4,
+  store_level: 1
+)
+noel_grass = Flower.create(
+  name: "noel grass",
+  grow_time: 33,
+  harvest_amount: 4,
+  store_level: 1
+)
+autumn_grass = Flower.create(
+  name: "autumn grass",
+  grow_time: 29,
+  harvest_amount: 3,
+  store_level: 1
+)
+pom_pom_grass = Flower.create(
+  name: "pom pom grass",
+  grow_time: 29,
+  harvest_amount: 3,
+  store_level: 1
+)
+blue_crystal = Flower.create(
+  name: "blue crystal",
+  grow_time: 55,
+  harvest_amount: 3,
+  store_level: 1
+)
+green_crystal = Flower.create(
+  name: "green crystal",
+  grow_time: 70,
+  harvest_amount: 3,
+  store_level: 1
+)
+red_crystal = Flower.create(
+  name: "red crystal",
+  grow_time: 80,
+  harvest_amount: 3,
+  store_level: 1
+)
+white_crystal = Flower.create(
+  name: "white crystal",
+  grow_time: 90,
+  harvest_amount: 3,
+  store_level: 1
+)
+emery_flower = Flower.create(
+  name: "emery flower",
+  grow_time: 120,
+  harvest_amount: 2,
+  store_level: 1
+)
+
+puts "Flowers seeded."
