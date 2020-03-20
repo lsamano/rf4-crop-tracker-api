@@ -1,4 +1,4 @@
 class Like < ApplicationRecord
-  belongs_to :crop
+  belongs_to :likeable, :polymorphic => true
   belongs_to :season
 end
