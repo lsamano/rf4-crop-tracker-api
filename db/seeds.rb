@@ -1,11 +1,15 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
+#############################################
+# Destroy previous data
 Season.destroy_all
 Crop.destroy_all
 Flower.destroy_all
 Like.destroy_all
 Hate.destroy_all
 
+#############################################
+# Seasons
 
 spring = Season.create(name: "spring")
 summer = Season.create(name: "summer")
@@ -14,6 +18,8 @@ winter = Season.create(name: "winter")
 
 puts "Seeded Seasons."
 
+#############################################
+# Crops
 cabbage = Crop.create(
   name: "cabbage",
   grow_time: 8,
@@ -272,6 +278,7 @@ pineapple.hated_seasons << spring
 pineapple.hated_seasons << fall
 pineapple.hated_seasons << winter
 
+#############################################
 # Miscellaneous
 fodder = Crop.create(
   name: "fodder",
@@ -343,6 +350,7 @@ dungeon_flower = Crop.create(
 
 puts "Crops Seeded."
 
+#############################################
 # Flowers
 toyherb = Flower.create(
   name: "toyherb",
@@ -350,96 +358,153 @@ toyherb = Flower.create(
   harvest_amount: 2,
   store_level: 1
 )
+toyherb.liked_seasons << spring
+toyherb.hated_seasons << winter
+
 moondrop = Flower.create(
   name: "moondrop",
   grow_time: 7,
   harvest_amount: 4,
   store_level: 1
 )
+moondrop.liked_seasons << spring
+moondrop.liked_seasons << fall
+moondrop.hated_seasons << winter
+
 pink_cat = Flower.create(
   name: "pink cat",
   grow_time: 6,
   harvest_amount: 3,
   store_level: 1
 )
+pink_cat.liked_seasons << summer
+pink_cat.hated_seasons << winter
+
 charm_blue = Flower.create(
   name: "charm blue",
   grow_time: 8,
   harvest_amount: 3,
   store_level: 1
 )
+charm_blue.liked_seasons << fall
+charm_blue.hated_seasons << winter
+
 cherry_grass = Flower.create(
   name: "cherry grass",
   grow_time: 10,
   harvest_amount: 4,
   store_level: 1
 )
+cherry_grass.liked_seasons << spring
+cherry_grass.hated_seasons << winter
+
 lamp_grass = Flower.create(
   name: "lamp grass",
   grow_time: 16,
   harvest_amount: 3,
   store_level: 1
 )
+lamp_grass.liked_seasons << winter
+
 ironleaf = Flower.create(
   name: "ironleaf",
   grow_time: 21,
   harvest_amount: 2,
   store_level: 1
 )
+ironleaf.liked_seasons << winter
+ironleaf.hated_seasons << summer
+
 four_leaf_clover = Flower.create(
   name: "4 leaf clover",
   grow_time: 28,
   harvest_amount: 3,
   store_level: 1
 )
+four_leaf_clover.liked_seasons << spring
+four_leaf_clover.liked_seasons << fall
+four_leaf_clover.hated_seasons << summer
+
 fireflower = Flower.create(
   name: "fireflower",
   grow_time: 42,
   harvest_amount: 4,
   store_level: 1
 )
+fireflower.liked_seasons << summer
+fireflower.hated_seasons << winter
+
 noel_grass = Flower.create(
   name: "noel grass",
   grow_time: 33,
   harvest_amount: 4,
   store_level: 1
 )
+noel_grass.liked_seasons << winter
+noel_grass.hated_seasons << summer
+
 autumn_grass = Flower.create(
   name: "autumn grass",
   grow_time: 29,
   harvest_amount: 3,
   store_level: 1
 )
+autumn_grass.liked_seasons << fall
+autumn_grass.hated_seasons << winter
+
 pom_pom_grass = Flower.create(
   name: "pom pom grass",
   grow_time: 29,
   harvest_amount: 3,
   store_level: 1
 )
+pom_pom_grass.liked_seasons << fall
+pom_pom_grass.hated_seasons << winter
+
 blue_crystal = Flower.create(
   name: "blue crystal",
   grow_time: 55,
   harvest_amount: 3,
   store_level: 1
 )
+blue_crystal.liked_seasons << spring
+blue_crystal.hated_seasons << summer
+blue_crystal.hated_seasons << fall
+blue_crystal.hated_seasons << winter
+
 green_crystal = Flower.create(
   name: "green crystal",
   grow_time: 70,
   harvest_amount: 3,
   store_level: 1
 )
+green_crystal.liked_seasons << summer
+green_crystal.hated_seasons << spring
+green_crystal.hated_seasons << fall
+green_crystal.hated_seasons << winter
+
 red_crystal = Flower.create(
   name: "red crystal",
   grow_time: 80,
   harvest_amount: 3,
   store_level: 1
 )
+red_crystal.liked_seasons << fall
+red_crystal.hated_seasons << spring
+red_crystal.hated_seasons << summer
+red_crystal.hated_seasons << winter
+
 white_crystal = Flower.create(
   name: "white crystal",
   grow_time: 90,
   harvest_amount: 3,
   store_level: 1
 )
+white_crystal.liked_seasons << winter
+white_crystal.hated_seasons << spring
+white_crystal.hated_seasons << summer
+white_crystal.hated_seasons << fall
+
 emery_flower = Flower.create(
   name: "emery flower",
   grow_time: 120,
