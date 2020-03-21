@@ -7,7 +7,7 @@ class CreateCrops < ActiveRecord::Migration[6.0]
       t.integer :store_level
       t.boolean :regrows
 
-      t.timestamps
+      # t.timestamps
     end
   end
 end

@@ -4,7 +4,7 @@ class CreateHates < ActiveRecord::Migration[6.0]
       t.references :hateable, polymorphic: true
       t.belongs_to :season, null: false, foreign_key: true
 
-      t.timestamps
+      # t.timestamps
     end
   end
 end

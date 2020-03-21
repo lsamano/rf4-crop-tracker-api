@@ -6,7 +6,7 @@ class CreateFlowers < ActiveRecord::Migration[6.0]
       t.integer :grow_time
       t.integer :store_level
 
-      t.timestamps
+      # t.timestamps
     end
   end
 end

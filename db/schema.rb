@@ -21,8 +21,6 @@ ActiveRecord::Schema.define(version: 2020_03_19_210207) do
     t.integer "grow_time"
     t.integer "store_level"
     t.boolean "regrows"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "flowers", force: :cascade do |t|
@@ -30,16 +28,12 @@ ActiveRecord::Schema.define(version: 2020_03_19_210207) do
     t.integer "harvest_amount"
     t.integer "grow_time"
     t.integer "store_level"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "hates", force: :cascade do |t|
     t.string "hateable_type"
     t.bigint "hateable_id"
     t.bigint "season_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
     t.index ["hateable_type", "hateable_id"], name: "index_hates_on_hateable_type_and_hateable_id"
     t.index ["season_id"], name: "index_hates_on_season_id"
   end
@@ -48,16 +42,12 @@ ActiveRecord::Schema.define(version: 2020_03_19_210207) do
     t.string "likeable_type"
     t.bigint "likeable_id"
     t.bigint "season_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
     t.index ["likeable_type", "likeable_id"], name: "index_likes_on_likeable_type_and_likeable_id"
     t.index ["season_id"], name: "index_likes_on_season_id"
   end
 
   create_table "seasons", force: :cascade do |t|
     t.string "name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   add_foreign_key "hates", "seasons"
