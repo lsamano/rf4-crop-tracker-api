@@ -1,24 +1,24 @@
-# README
+# Rune Factory 4 Special - Crop Tracker
+A personal API listing all crops and flowers found in-game, as well as their highest shipped level for my main file.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Endpoints
 
-Things you may want to cover:
+## /seasons
+View a list of all seasons and their associations with crops and flowers.
 
-* Ruby version
+## /seasons/:name
+Query a season by name.
 
-* System dependencies
+## /crops
+View a list of all crops and their liked/hated seasons.
 
-* Configuration
+## /crops/:name
+View a single crop by name and its liked/hated seasons. Names are slugified.
+`localhost:3000/crops/pink_turnip`
 
-* Database creation
+## /flowers
+View a list of all flowers and their liked/hated seasons.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## /flowers/:name
+View a single flower by name and its liked/hated seasons. Names are slugified.
+`localhost:3000/crops/noel_grass`
