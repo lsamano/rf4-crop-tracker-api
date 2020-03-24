@@ -5,7 +5,8 @@ class CropsController < ApplicationController
   end
 
   def show
-    crop = Crop.find_by(name: params[:name].titleize.downcase)
+    sql_query = "replace(replace(name, ' ', '_'), '-', '_') like ?"
+    crop = Crop.where(sql_query, params[:name])
     render json: crop, include: [:liked_seasons, :hated_seasons]
   end
 

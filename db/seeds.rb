@@ -2,11 +2,11 @@
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #############################################
 # Destroy previous data
+Like.destroy_all
+Hate.destroy_all
 Season.destroy_all
 Crop.destroy_all
 Flower.destroy_all
-Like.destroy_all
-Hate.destroy_all
 
 #############################################
 # Seasons
@@ -52,7 +52,7 @@ pink_melon.liked_seasons << summer
 pink_melon.hated_seasons << winter
 
 onion = Crop.create(
-  name: "pink melon",
+  name: "onion",
   grow_time: 18,
   harvest_amount: 5,
   regrows: false,
@@ -207,7 +207,7 @@ bok_choy.liked_seasons << fall
 bok_choy.hated_seasons << summer
 
 hot_hot_fruit = Crop.create(
-  name: "hot hot fruit",
+  name: "hot-hot fruit",
   grow_time: 31,
   harvest_amount: 5,
   regrows: false,
@@ -416,7 +416,7 @@ ironleaf.liked_seasons << winter
 ironleaf.hated_seasons << summer
 
 four_leaf_clover = Flower.create(
-  name: "4 leaf clover",
+  name: "4-leaf clover",
   grow_time: 28,
   harvest_amount: 3,
   store_level: 1
@@ -453,7 +453,7 @@ autumn_grass.liked_seasons << fall
 autumn_grass.hated_seasons << winter
 
 pom_pom_grass = Flower.create(
-  name: "pom pom grass",
+  name: "pom-pom grass",
   grow_time: 29,
   harvest_amount: 3,
   store_level: 1

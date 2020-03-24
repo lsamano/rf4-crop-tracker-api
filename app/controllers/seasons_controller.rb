@@ -7,7 +7,8 @@ class SeasonsController < ApplicationController
   end
 
   def show
-    render json: seasons, include: [
+    season = Season.find_by_name(params[:name])
+    render json: season, include: [
       :liked_crops, :hated_crops, :liked_flowers, :hated_flowers
     ]
   end

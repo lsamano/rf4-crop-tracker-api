@@ -5,7 +5,8 @@ class FlowersController < ApplicationController
   end
 
   def show
-    flower = Flower.find_by(name: params[:name].titleize.downcase)
+    sql_query = "replace(replace(name, ' ', '_'), '-', '_') like ?"
+    flower = Flower.where(sql_query, params[:name])
     render json: flower, include: [:liked_seasons, :hated_seasons]
   end
 end
