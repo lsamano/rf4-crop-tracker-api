@@ -6,6 +6,7 @@ class CreateCrops < ActiveRecord::Migration[6.0]
       t.integer :grow_time
       t.integer :store_level
       t.boolean :regrows
+      t.string :img_url
 
       # t.timestamps
     end

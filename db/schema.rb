@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2020_03_19_210207) do
     t.integer "grow_time"
     t.integer "store_level"
     t.boolean "regrows"
+    t.string "img_url"
   end
 
   create_table "flowers", force: :cascade do |t|
@@ -28,6 +29,7 @@ ActiveRecord::Schema.define(version: 2020_03_19_210207) do
     t.integer "harvest_amount"
     t.integer "grow_time"
     t.integer "store_level"
+    t.string "img_url"
   end
 
   create_table "hates", force: :cascade do |t|

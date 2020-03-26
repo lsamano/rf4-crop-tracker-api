@@ -8,6 +8,8 @@ Season.destroy_all
 Crop.destroy_all
 Flower.destroy_all
 
+puts "Destroyed all previous data (if applicable)."
+
 #############################################
 # Seasons
 
@@ -25,7 +27,7 @@ cabbage = Crop.create(
   grow_time: 8,
   harvest_amount: 3,
   regrows: false,
-  store_level: 1
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/c/cc/Cabbage.png/revision/latest?cb=20120115235005"
 )
 cabbage.liked_seasons << spring
 cabbage.liked_seasons << fall
@@ -35,7 +37,7 @@ pink_turnip = Crop.create(
   grow_time: 11,
   harvest_amount: 4,
   regrows: false,
-  store_level: 1
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/e/e9/Pinkturnip.png/revision/latest?cb=20120115234918"
 )
 pink_turnip.liked_seasons << spring
 pink_turnip.hated_seasons << winter
@@ -45,7 +47,7 @@ pink_melon = Crop.create(
   grow_time: 7,
   harvest_amount: 2,
   regrows: true,
-  store_level: 1
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/e/e1/Pink_Melon.png/revision/latest?cb=20160229021817"
 )
 pink_melon.liked_seasons << spring
 pink_melon.liked_seasons << summer
@@ -56,7 +58,7 @@ onion = Crop.create(
   grow_time: 18,
   harvest_amount: 5,
   regrows: false,
-  store_level: 1
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/5/51/Onion.png/revision/latest?cb=20120115235137"
 )
 onion.liked_seasons << fall
 
@@ -65,7 +67,7 @@ pumpkin = Crop.create(
   grow_time: 7,
   harvest_amount: 3,
   regrows: true,
-  store_level: 1
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/6/64/Pumpkin.png/revision/latest?cb=20120116000245"
 )
 pumpkin.liked_seasons << spring
 pumpkin.liked_seasons << summer
@@ -76,7 +78,7 @@ cucumber = Crop.create(
   grow_time: 5,
   harvest_amount: 5,
   regrows: true,
-  store_level: 1
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/5/59/Cucumber.png/revision/latest?cb=20120116000004"
 )
 cucumber.liked_seasons << spring
 cucumber.liked_seasons << summer
@@ -87,7 +89,7 @@ corn = Crop.create(
   grow_time: 7,
   harvest_amount: 1,
   regrows: false,
-  store_level: 1
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/f/f8/Corn.png/revision/latest?cb=20120116000150"
 )
 corn.liked_seasons << spring
 corn.liked_seasons << summer
@@ -98,7 +100,7 @@ tomato = Crop.create(
   grow_time: 7,
   harvest_amount: 3,
   regrows: true,
-  store_level: 1
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/9/9d/Tomato.png/revision/latest?cb=20120116000034"
 )
 tomato.liked_seasons << spring
 tomato.liked_seasons << summer
@@ -109,7 +111,7 @@ eggplant = Crop.create(
   grow_time: 7,
   harvest_amount: 4,
   regrows: true,
-  store_level: 1
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/8/8f/Eggplant.png/revision/latest?cb=20120317120026"
 )
 eggplant.liked_seasons << spring
 eggplant.liked_seasons << summer
@@ -120,7 +122,7 @@ yam = Crop.create(
   grow_time: 8,
   harvest_amount: 5,
   regrows: false,
-  store_level: 1
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/5/52/Yam.png/revision/latest?cb=20120116014736"
 )
 yam.liked_seasons << summer
 yam.liked_seasons << fall
@@ -131,7 +133,7 @@ potato = Crop.create(
   grow_time: 7,
   harvest_amount: 3,
   regrows: false,
-  store_level: 1
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/c/c2/Potato.png/revision/latest?cb=20120116014636"
 )
 potato.liked_seasons << spring
 potato.liked_seasons << summer
@@ -142,7 +144,7 @@ carrot = Crop.create(
   grow_time: 10,
   harvest_amount: 3,
   regrows: false,
-  store_level: 1
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/c/c3/Carrot.png/revision/latest?cb=20120116014658"
 )
 carrot.liked_seasons << fall
 
@@ -151,7 +153,7 @@ green_pepper = Crop.create(
   grow_time: 7,
   harvest_amount: 5,
   regrows: true,
-  store_level: 1
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/1/11/Greenpepper.png/revision/latest?cb=20120317120042"
 )
 green_pepper.liked_seasons << summer
 green_pepper.hated_seasons << winter
@@ -161,7 +163,7 @@ spinach = Crop.create(
   grow_time: 2,
   harvest_amount: 2,
   regrows: false,
-  store_level: 1
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/b/ba/Spinache.png/revision/latest?cb=20120116014954"
 )
 spinach.liked_seasons << fall
 
@@ -170,7 +172,7 @@ turnip = Crop.create(
   grow_time: 3,
   harvest_amount: 2,
   regrows: false,
-  store_level: 1
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/b/b7/Turnip.png/revision/latest?cb=20120116015209"
 )
 turnip.liked_seasons << summer
 turnip.liked_seasons << fall
@@ -180,7 +182,7 @@ radish = Crop.create(
   grow_time: 5,
   harvest_amount: 1,
   regrows: false,
-  store_level: 1
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/2/21/Daikonraddish.png/revision/latest?cb=20120116015334"
 )
 radish.liked_seasons << fall
 radish.hated_seasons << summer
@@ -190,7 +192,7 @@ leek = Crop.create(
   grow_time: 9,
   harvest_amount: 1,
   regrows: false,
-  store_level: 1
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/5/57/Leek.png/revision/latest?cb=20120116015311"
 )
 leek.liked_seasons << spring
 leek.liked_seasons << fall
@@ -201,7 +203,7 @@ bok_choy = Crop.create(
   grow_time: 5,
   harvest_amount: 4,
   regrows: false,
-  store_level: 1
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/c/c1/Whitecabbage.png/revision/latest?cb=20120116015402"
 )
 bok_choy.liked_seasons << fall
 bok_choy.hated_seasons << summer
@@ -211,7 +213,7 @@ hot_hot_fruit = Crop.create(
   grow_time: 31,
   harvest_amount: 5,
   regrows: false,
-  store_level: 1
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/3/39/Hothotfruit.png/revision/latest?cb=20120317120057"
 )
 hot_hot_fruit.liked_seasons << winter
 hot_hot_fruit.hated_seasons << summer
@@ -221,7 +223,7 @@ golden_cabbage = Crop.create(
   grow_time: 90,
   harvest_amount: 3,
   regrows: false,
-  store_level: 1
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/b/b0/Gold_Cabbage.png/revision/latest?cb=20160614011526"
 )
 golden_cabbage.liked_seasons << winter
 golden_cabbage.hated_seasons << summer
@@ -231,7 +233,7 @@ golden_pumpkin = Crop.create(
   grow_time: 70,
   harvest_amount: 3,
   regrows: true,
-  store_level: 1
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/b/ba/Gold_Pumpkin.png/revision/latest?cb=20160614012735"
 )
 golden_pumpkin.liked_seasons << winter
 golden_pumpkin.hated_seasons << summer
@@ -241,7 +243,7 @@ golden_potato = Crop.create(
   grow_time: 50,
   harvest_amount: 3,
   regrows: false,
-  store_level: 1
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/0/02/Gold_Potato.png/revision/latest?cb=20160614012641"
 )
 golden_potato.liked_seasons << winter
 golden_potato.hated_seasons << summer
@@ -251,7 +253,7 @@ golden_turnip = Crop.create(
   grow_time: 90,
   harvest_amount: 3,
   regrows: false,
-  store_level: 1
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/b/b4/Gold_Turnip.png/revision/latest?cb=20160614012836"
 )
 golden_turnip.liked_seasons << winter
 golden_turnip.hated_seasons << summer
@@ -261,7 +263,7 @@ strawberry = Crop.create(
   grow_time: 16,
   harvest_amount: 6,
   regrows: true,
-  store_level: 1
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/6/6d/Strawberry.png/revision/latest?cb=20120115235246"
 )
 strawberry.liked_seasons << spring
 strawberry.liked_seasons << fall
@@ -271,7 +273,7 @@ pineapple = Crop.create(
   grow_time: 28,
   harvest_amount: 3,
   regrows: true,
-  store_level: 1
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/5/54/PineappleRF3.png/revision/latest?cb=20140516214401"
 )
 pineapple.liked_seasons << summer
 pineapple.hated_seasons << spring
@@ -285,7 +287,7 @@ fodder = Crop.create(
   grow_time: 4,
   harvest_amount: 1,
   regrows: true,
-  store_level: 1
+  img_url: ""
 )
 
 grapes = Crop.create(
@@ -293,7 +295,7 @@ grapes = Crop.create(
   grow_time: 50,
   harvest_amount: 5,
   regrows: true,
-  store_level: 1
+  img_url: ""
 )
 grapes.hated_seasons << winter
 
@@ -302,7 +304,7 @@ orange = Crop.create(
   grow_time: 22,
   harvest_amount: 5,
   regrows: true,
-  store_level: 1
+  img_url: ""
 )
 orange.hated_seasons << winter
 
@@ -311,7 +313,7 @@ apple = Crop.create(
   grow_time: 62,
   harvest_amount: 5,
   regrows: true,
-  store_level: 1
+  img_url: ""
 )
 apple.hated_seasons << winter
 
@@ -320,7 +322,7 @@ twinkle_tree = Crop.create(
   grow_time: 38,
   harvest_amount: 0,
   regrows: false,
-  store_level: 1
+  img_url: ""
 )
 twinkle_tree.hated_seasons << winter
 
@@ -329,7 +331,7 @@ shield_flower = Crop.create(
   grow_time: 12,
   harvest_amount: 1,
   regrows: false,
-  store_level: 1
+  img_url: ""
 )
 
 sword_flower = Crop.create(
@@ -337,7 +339,7 @@ sword_flower = Crop.create(
   grow_time: 12,
   harvest_amount: 1,
   regrows: false,
-  store_level: 1
+  img_url: ""
 )
 
 dungeon_flower = Crop.create(
@@ -345,7 +347,7 @@ dungeon_flower = Crop.create(
   grow_time: 18,
   harvest_amount: 1,
   regrows: false,
-  store_level: 1
+  img_url: ""
 )
 
 puts "Crops Seeded."
@@ -356,7 +358,7 @@ toyherb = Flower.create(
   name: "toyherb",
   grow_time: 4,
   harvest_amount: 2,
-  store_level: 1
+  img_url: ""
 )
 toyherb.liked_seasons << spring
 toyherb.hated_seasons << winter
@@ -365,7 +367,7 @@ moondrop = Flower.create(
   name: "moondrop",
   grow_time: 7,
   harvest_amount: 4,
-  store_level: 1
+  img_url: ""
 )
 moondrop.liked_seasons << spring
 moondrop.liked_seasons << fall
@@ -375,7 +377,7 @@ pink_cat = Flower.create(
   name: "pink cat",
   grow_time: 6,
   harvest_amount: 3,
-  store_level: 1
+  img_url: ""
 )
 pink_cat.liked_seasons << summer
 pink_cat.hated_seasons << winter
@@ -384,7 +386,7 @@ charm_blue = Flower.create(
   name: "charm blue",
   grow_time: 8,
   harvest_amount: 3,
-  store_level: 1
+  img_url: ""
 )
 charm_blue.liked_seasons << fall
 charm_blue.hated_seasons << winter
@@ -393,7 +395,7 @@ cherry_grass = Flower.create(
   name: "cherry grass",
   grow_time: 10,
   harvest_amount: 4,
-  store_level: 1
+  img_url: ""
 )
 cherry_grass.liked_seasons << spring
 cherry_grass.hated_seasons << winter
@@ -402,7 +404,7 @@ lamp_grass = Flower.create(
   name: "lamp grass",
   grow_time: 16,
   harvest_amount: 3,
-  store_level: 1
+  img_url: ""
 )
 lamp_grass.liked_seasons << winter
 
@@ -410,7 +412,7 @@ ironleaf = Flower.create(
   name: "ironleaf",
   grow_time: 21,
   harvest_amount: 2,
-  store_level: 1
+  img_url: ""
 )
 ironleaf.liked_seasons << winter
 ironleaf.hated_seasons << summer
@@ -419,7 +421,7 @@ four_leaf_clover = Flower.create(
   name: "4-leaf clover",
   grow_time: 28,
   harvest_amount: 3,
-  store_level: 1
+  img_url: ""
 )
 four_leaf_clover.liked_seasons << spring
 four_leaf_clover.liked_seasons << fall
@@ -429,7 +431,7 @@ fireflower = Flower.create(
   name: "fireflower",
   grow_time: 42,
   harvest_amount: 4,
-  store_level: 1
+  img_url: ""
 )
 fireflower.liked_seasons << summer
 fireflower.hated_seasons << winter
@@ -438,7 +440,7 @@ noel_grass = Flower.create(
   name: "noel grass",
   grow_time: 33,
   harvest_amount: 4,
-  store_level: 1
+  img_url: ""
 )
 noel_grass.liked_seasons << winter
 noel_grass.hated_seasons << summer
@@ -447,7 +449,7 @@ autumn_grass = Flower.create(
   name: "autumn grass",
   grow_time: 29,
   harvest_amount: 3,
-  store_level: 1
+  img_url: ""
 )
 autumn_grass.liked_seasons << fall
 autumn_grass.hated_seasons << winter
@@ -456,7 +458,7 @@ pom_pom_grass = Flower.create(
   name: "pom-pom grass",
   grow_time: 29,
   harvest_amount: 3,
-  store_level: 1
+  img_url: ""
 )
 pom_pom_grass.liked_seasons << fall
 pom_pom_grass.hated_seasons << winter
@@ -465,7 +467,7 @@ blue_crystal = Flower.create(
   name: "blue crystal",
   grow_time: 55,
   harvest_amount: 3,
-  store_level: 1
+  img_url: ""
 )
 blue_crystal.liked_seasons << spring
 blue_crystal.hated_seasons << summer
@@ -476,7 +478,7 @@ green_crystal = Flower.create(
   name: "green crystal",
   grow_time: 70,
   harvest_amount: 3,
-  store_level: 1
+  img_url: ""
 )
 green_crystal.liked_seasons << summer
 green_crystal.hated_seasons << spring
@@ -487,7 +489,7 @@ red_crystal = Flower.create(
   name: "red crystal",
   grow_time: 80,
   harvest_amount: 3,
-  store_level: 1
+  img_url: ""
 )
 red_crystal.liked_seasons << fall
 red_crystal.hated_seasons << spring
@@ -498,7 +500,7 @@ white_crystal = Flower.create(
   name: "white crystal",
   grow_time: 90,
   harvest_amount: 3,
-  store_level: 1
+  img_url: ""
 )
 white_crystal.liked_seasons << winter
 white_crystal.hated_seasons << spring
@@ -509,7 +511,7 @@ emery_flower = Flower.create(
   name: "emery flower",
   grow_time: 120,
   harvest_amount: 2,
-  store_level: 1
+  img_url: ""
 )
 
 puts "Flowers seeded."
