@@ -287,7 +287,7 @@ fodder = Crop.create(
   grow_time: 4,
   harvest_amount: 1,
   regrows: true,
-  img_url: ""
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/c/c5/Grass.png/revision/latest?cb=20140215075628"
 )
 
 grapes = Crop.create(
@@ -304,7 +304,7 @@ orange = Crop.create(
   grow_time: 22,
   harvest_amount: 5,
   regrows: true,
-  img_url: ""
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/4/43/Orange.png/revision/latest?cb=20140408213702"
 )
 orange.hated_seasons << winter
 
@@ -313,7 +313,7 @@ apple = Crop.create(
   grow_time: 62,
   harvest_amount: 5,
   regrows: true,
-  img_url: ""
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/7/7d/Apple.png/revision/latest?cb=20140408214732"
 )
 apple.hated_seasons << winter
 
@@ -331,7 +331,7 @@ shield_flower = Crop.create(
   grow_time: 12,
   harvest_amount: 1,
   regrows: false,
-  img_url: ""
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/d/d9/MagicPlantShield.PNG/revision/latest/scale-to-width-down/40?cb=20140330005317"
 )
 
 sword_flower = Crop.create(
@@ -339,7 +339,7 @@ sword_flower = Crop.create(
   grow_time: 12,
   harvest_amount: 1,
   regrows: false,
-  img_url: ""
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/8/87/PlantSword.png/revision/latest/scale-to-width-down/39?cb=20140329213930"
 )
 
 dungeon_flower = Crop.create(
@@ -358,7 +358,7 @@ toyherb = Flower.create(
   name: "toyherb",
   grow_time: 4,
   harvest_amount: 2,
-  img_url: ""
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/7/7b/RF3Toyherb.png/revision/latest?cb=20181221035450"
 )
 toyherb.liked_seasons << spring
 toyherb.hated_seasons << winter
@@ -367,7 +367,7 @@ moondrop = Flower.create(
   name: "moondrop",
   grow_time: 7,
   harvest_amount: 4,
-  img_url: ""
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/8/8a/RF4Moondrop_Flower.png/revision/latest?cb=20190627215853"
 )
 moondrop.liked_seasons << spring
 moondrop.liked_seasons << fall
@@ -377,7 +377,7 @@ pink_cat = Flower.create(
   name: "pink cat",
   grow_time: 6,
   harvest_amount: 3,
-  img_url: ""
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/e/eb/RF4Pink_Cat.png/revision/latest?cb=20190830174323"
 )
 pink_cat.liked_seasons << summer
 pink_cat.hated_seasons << winter
@@ -386,7 +386,7 @@ charm_blue = Flower.create(
   name: "charm blue",
   grow_time: 8,
   harvest_amount: 3,
-  img_url: ""
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/2/2a/RF4Charm_Blue.png/revision/latest?cb=20190830173551"
 )
 charm_blue.liked_seasons << fall
 charm_blue.hated_seasons << winter
@@ -395,7 +395,7 @@ cherry_grass = Flower.create(
   name: "cherry grass",
   grow_time: 10,
   harvest_amount: 4,
-  img_url: ""
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/6/68/RF3Cherry_Grass.png/revision/latest?cb=20190104054637"
 )
 cherry_grass.liked_seasons << spring
 cherry_grass.hated_seasons << winter
