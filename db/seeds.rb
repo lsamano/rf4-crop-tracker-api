@@ -404,7 +404,7 @@ lamp_grass = Flower.create(
   name: "lamp grass",
   grow_time: 16,
   harvest_amount: 3,
-  img_url: ""
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/5/5a/RF3Lamp_Grass.png/revision/latest?cb=20190105000419"
 )
 lamp_grass.liked_seasons << winter
 
@@ -412,7 +412,7 @@ ironleaf = Flower.create(
   name: "ironleaf",
   grow_time: 21,
   harvest_amount: 2,
-  img_url: ""
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/6/66/RF3Ironleaf.png/revision/latest?cb=20190104235908"
 )
 ironleaf.liked_seasons << winter
 ironleaf.hated_seasons << summer
@@ -421,7 +421,7 @@ four_leaf_clover = Flower.create(
   name: "4-leaf clover",
   grow_time: 28,
   harvest_amount: 3,
-  img_url: ""
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/9/9b/RF34-Leaf_Clover.png/revision/latest?cb=20190104235645"
 )
 four_leaf_clover.liked_seasons << spring
 four_leaf_clover.liked_seasons << fall
@@ -431,7 +431,7 @@ fireflower = Flower.create(
   name: "fireflower",
   grow_time: 42,
   harvest_amount: 4,
-  img_url: ""
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/6/62/RF3Fireflower.png/revision/latest?cb=20190104235450"
 )
 fireflower.liked_seasons << summer
 fireflower.hated_seasons << winter
@@ -440,7 +440,7 @@ noel_grass = Flower.create(
   name: "noel grass",
   grow_time: 33,
   harvest_amount: 4,
-  img_url: ""
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/6/67/RF3Noel_Grass.png/revision/latest?cb=20190104235050"
 )
 noel_grass.liked_seasons << winter
 noel_grass.hated_seasons << summer
@@ -449,7 +449,7 @@ autumn_grass = Flower.create(
   name: "autumn grass",
   grow_time: 29,
   harvest_amount: 3,
-  img_url: ""
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/2/2b/RF3Autumn_Grass.png/revision/latest?cb=20190104234918"
 )
 autumn_grass.liked_seasons << fall
 autumn_grass.hated_seasons << winter
@@ -458,7 +458,7 @@ pom_pom_grass = Flower.create(
   name: "pom-pom grass",
   grow_time: 29,
   harvest_amount: 3,
-  img_url: ""
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/2/28/RF3Pom-Pom_Grass.png/revision/latest?cb=20190104234537"
 )
 pom_pom_grass.liked_seasons << fall
 pom_pom_grass.hated_seasons << winter
@@ -467,7 +467,7 @@ blue_crystal = Flower.create(
   name: "blue crystal",
   grow_time: 55,
   harvest_amount: 3,
-  img_url: ""
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/b/ba/RF3Blue_Crystal.png/revision/latest?cb=20190105000233"
 )
 blue_crystal.liked_seasons << spring
 blue_crystal.hated_seasons << summer
@@ -478,7 +478,7 @@ green_crystal = Flower.create(
   name: "green crystal",
   grow_time: 70,
   harvest_amount: 3,
-  img_url: ""
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/c/c7/RF3Green_Crystal.png/revision/latest?cb=20190104235231"
 )
 green_crystal.liked_seasons << summer
 green_crystal.hated_seasons << spring
@@ -489,7 +489,7 @@ red_crystal = Flower.create(
   name: "red crystal",
   grow_time: 80,
   harvest_amount: 3,
-  img_url: ""
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/4/48/RF3Red_Crystal.png/revision/latest?cb=20190105000836"
 )
 red_crystal.liked_seasons << fall
 red_crystal.hated_seasons << spring
@@ -500,7 +500,7 @@ white_crystal = Flower.create(
   name: "white crystal",
   grow_time: 90,
   harvest_amount: 3,
-  img_url: ""
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/5/56/RF3White_Crystal.png/revision/latest?cb=20190105000852"
 )
 white_crystal.liked_seasons << winter
 white_crystal.hated_seasons << spring
@@ -511,7 +511,7 @@ emery_flower = Flower.create(
   name: "emery flower",
   grow_time: 120,
   harvest_amount: 2,
-  img_url: ""
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/1/1e/RF3Emery_Flower.png/revision/latest?cb=20190105000051"
 )
 
 puts "Flowers seeded."
