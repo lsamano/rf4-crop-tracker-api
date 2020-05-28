@@ -1,6 +1,17 @@
 # Rune Factory 4 Special - Crop Tracker
 A personal API listing all crops and flowers found in-game, as well as their highest shipped level for my main file.
 
+# Setup
+As this is a Rails app, run
+```
+bundle
+rails db:create
+rails db:schema:load
+rails db:seed
+```
+There are alternatives to this like running `rails db:setup`.
+After it is set up, run `rails s` to start up the server.
+
 # Endpoints
 
 ## /seasons
