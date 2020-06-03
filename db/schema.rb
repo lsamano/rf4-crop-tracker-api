@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_19_210207) do
+ActiveRecord::Schema.define(version: 2020_06_03_144218) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -48,10 +48,19 @@ ActiveRecord::Schema.define(version: 2020_03_19_210207) do
     t.index ["season_id"], name: "index_likes_on_season_id"
   end
 
+  create_table "neutrals", force: :cascade do |t|
+    t.string "neutrable_type"
+    t.bigint "neutrable_id"
+    t.bigint "season_id", null: false
+    t.index ["neutrable_type", "neutrable_id"], name: "index_neutrals_on_neutrable_type_and_neutrable_id"
+    t.index ["season_id"], name: "index_neutrals_on_season_id"
+  end
+
   create_table "seasons", force: :cascade do |t|
     t.string "name"
   end
 
   add_foreign_key "hates", "seasons"
   add_foreign_key "likes", "seasons"
+  add_foreign_key "neutrals", "seasons"
 end
