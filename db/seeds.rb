@@ -332,6 +332,10 @@ fodder = Crop.create(
   regrows: true,
   img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/c/c5/Grass.png/revision/latest?cb=20140215075628"
 )
+fodder.neutral_seasons << spring
+fodder.neutral_seasons << summer
+fodder.neutral_seasons << fall
+fodder.neutral_seasons << winter
 
 grapes = Crop.create(
   name: "grapes",
@@ -341,6 +345,9 @@ grapes = Crop.create(
   img_url: ""
 )
 grapes.hated_seasons << winter
+grapes.neutral_seasons << spring
+grapes.neutral_seasons << summer
+grapes.neutral_seasons << fall
 
 orange = Crop.create(
   name: "orange",
@@ -350,6 +357,9 @@ orange = Crop.create(
   img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/4/43/Orange.png/revision/latest?cb=20140408213702"
 )
 orange.hated_seasons << winter
+orange.neutral_seasons << spring
+orange.neutral_seasons << summer
+orange.neutral_seasons << fall
 
 apple = Crop.create(
   name: "apple",
@@ -359,6 +369,9 @@ apple = Crop.create(
   img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/7/7d/Apple.png/revision/latest?cb=20140408214732"
 )
 apple.hated_seasons << winter
+apple.neutral_seasons << spring
+apple.neutral_seasons << summer
+apple.neutral_seasons << fall
 
 twinkle_tree = Crop.create(
   name: "twinkle tree",
@@ -368,6 +381,9 @@ twinkle_tree = Crop.create(
   img_url: ""
 )
 twinkle_tree.hated_seasons << winter
+twinkle_tree.neutral_seasons << spring
+twinkle_tree.neutral_seasons << summer
+twinkle_tree.neutral_seasons << fall
 
 shield_flower = Crop.create(
   name: "shield flower",
@@ -376,6 +392,10 @@ shield_flower = Crop.create(
   regrows: false,
   img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/d/d9/MagicPlantShield.PNG/revision/latest/scale-to-width-down/40?cb=20140330005317"
 )
+shield_flower.neutral_seasons << spring
+shield_flower.neutral_seasons << summer
+shield_flower.neutral_seasons << fall
+shield_flower.neutral_seasons << winter
 
 sword_flower = Crop.create(
   name: "sword flower",
@@ -384,6 +404,10 @@ sword_flower = Crop.create(
   regrows: false,
   img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/8/87/PlantSword.png/revision/latest/scale-to-width-down/39?cb=20140329213930"
 )
+sword_flower.neutral_seasons << spring
+sword_flower.neutral_seasons << summer
+sword_flower.neutral_seasons << fall
+sword_flower.neutral_seasons << winter
 
 dungeon_flower = Crop.create(
   name: "dungeon flower",
@@ -392,6 +416,10 @@ dungeon_flower = Crop.create(
   regrows: false,
   img_url: ""
 )
+dungeon_flower.neutral_seasons << spring
+dungeon_flower.neutral_seasons << summer
+dungeon_flower.neutral_seasons << fall
+dungeon_flower.neutral_seasons << winter
 
 puts "Crops Seeded."
 
