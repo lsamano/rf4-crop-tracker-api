@@ -4,6 +4,7 @@
 # Destroy previous data
 Like.destroy_all
 Hate.destroy_all
+Neutral.destroy_all
 Season.destroy_all
 Crop.destroy_all
 Flower.destroy_all
@@ -31,6 +32,8 @@ cabbage = Crop.create(
 )
 cabbage.liked_seasons << spring
 cabbage.liked_seasons << fall
+cabbage.neutral_seasons << summer
+cabbage.neutral_seasons << winter
 
 pink_turnip = Crop.create(
   name: "pink turnip",
@@ -41,6 +44,8 @@ pink_turnip = Crop.create(
 )
 pink_turnip.liked_seasons << spring
 pink_turnip.hated_seasons << winter
+pink_turnip.neutral_seasons << summer
+pink_turnip.neutral_seasons << fall
 
 pink_melon = Crop.create(
   name: "pink melon",
@@ -52,6 +57,7 @@ pink_melon = Crop.create(
 pink_melon.liked_seasons << spring
 pink_melon.liked_seasons << summer
 pink_melon.hated_seasons << winter
+pink_melon.neutral_seasons << fall
 
 onion = Crop.create(
   name: "onion",
@@ -61,6 +67,9 @@ onion = Crop.create(
   img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/5/51/Onion.png/revision/latest?cb=20120115235137"
 )
 onion.liked_seasons << fall
+onion.neutral_seasons << spring
+onion.neutral_seasons << summer
+onion.neutral_seasons << winter
 
 pumpkin = Crop.create(
   name: "pumpkin",
@@ -72,6 +81,7 @@ pumpkin = Crop.create(
 pumpkin.liked_seasons << spring
 pumpkin.liked_seasons << summer
 pumpkin.hated_seasons << winter
+pumpkin.neutral_seasons << fall
 
 cucumber = Crop.create(
   name: "cucumber",
@@ -83,6 +93,7 @@ cucumber = Crop.create(
 cucumber.liked_seasons << spring
 cucumber.liked_seasons << summer
 cucumber.hated_seasons << winter
+cucumber.neutral_seasons << fall
 
 corn = Crop.create(
   name: "corn",
@@ -94,6 +105,7 @@ corn = Crop.create(
 corn.liked_seasons << spring
 corn.liked_seasons << summer
 corn.hated_seasons << winter
+corn.neutral_seasons << fall
 
 tomato = Crop.create(
   name: "tomato",
@@ -105,6 +117,7 @@ tomato = Crop.create(
 tomato.liked_seasons << spring
 tomato.liked_seasons << summer
 tomato.hated_seasons << winter
+tomato.neutral_seasons << fall
 
 eggplant = Crop.create(
   name: "eggplant",
@@ -116,6 +129,7 @@ eggplant = Crop.create(
 eggplant.liked_seasons << spring
 eggplant.liked_seasons << summer
 eggplant.hated_seasons << winter
+eggplant.neutral_seasons << fall
 
 yam = Crop.create(
   name: "yam",
@@ -127,6 +141,7 @@ yam = Crop.create(
 yam.liked_seasons << summer
 yam.liked_seasons << fall
 yam.hated_seasons << winter
+yam.neutral_seasons << spring
 
 potato = Crop.create(
   name: "potato",
@@ -138,6 +153,7 @@ potato = Crop.create(
 potato.liked_seasons << spring
 potato.liked_seasons << summer
 potato.hated_seasons << winter
+potato.neutral_seasons << fall
 
 carrot = Crop.create(
   name: "carrot",
@@ -147,6 +163,9 @@ carrot = Crop.create(
   img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/c/c3/Carrot.png/revision/latest?cb=20120116014658"
 )
 carrot.liked_seasons << fall
+carrot.neutral_seasons << spring
+carrot.neutral_seasons << summer
+carrot.neutral_seasons << winter
 
 green_pepper = Crop.create(
   name: "green pepper",
@@ -157,6 +176,8 @@ green_pepper = Crop.create(
 )
 green_pepper.liked_seasons << summer
 green_pepper.hated_seasons << winter
+green_pepper.neutral_seasons << spring
+green_pepper.neutral_seasons << fall
 
 spinach = Crop.create(
   name: "spinach",
@@ -166,6 +187,9 @@ spinach = Crop.create(
   img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/b/ba/Spinache.png/revision/latest?cb=20120116014954"
 )
 spinach.liked_seasons << fall
+spinach.neutral_seasons << spring
+spinach.neutral_seasons << summer
+spinach.neutral_seasons << winter
 
 turnip = Crop.create(
   name: "turnip",
@@ -176,6 +200,8 @@ turnip = Crop.create(
 )
 turnip.liked_seasons << summer
 turnip.liked_seasons << fall
+turnip.neutral_seasons << spring
+turnip.neutral_seasons << winter
 
 radish = Crop.create(
   name: "radish",
@@ -186,6 +212,8 @@ radish = Crop.create(
 )
 radish.liked_seasons << fall
 radish.hated_seasons << summer
+radish.neutral_seasons << spring
+radish.neutral_seasons << summer
 
 leek = Crop.create(
   name: "leek",
@@ -197,6 +225,7 @@ leek = Crop.create(
 leek.liked_seasons << spring
 leek.liked_seasons << fall
 leek.hated_seasons << summer
+leek.neutral_seasons << winter
 
 bok_choy = Crop.create(
   name: "bok choy",
@@ -207,6 +236,8 @@ bok_choy = Crop.create(
 )
 bok_choy.liked_seasons << fall
 bok_choy.hated_seasons << summer
+bok_choy.neutral_seasons << spring
+bok_choy.neutral_seasons << winter
 
 hot_hot_fruit = Crop.create(
   name: "hot-hot fruit",
@@ -217,6 +248,8 @@ hot_hot_fruit = Crop.create(
 )
 hot_hot_fruit.liked_seasons << winter
 hot_hot_fruit.hated_seasons << summer
+hot_hot_fruit.neutral_seasons << fall
+hot_hot_fruit.neutral_seasons << winter
 
 golden_cabbage = Crop.create(
   name: "golden cabbage",
@@ -227,6 +260,8 @@ golden_cabbage = Crop.create(
 )
 golden_cabbage.liked_seasons << winter
 golden_cabbage.hated_seasons << summer
+golden_cabbage.neutral_seasons << spring
+golden_cabbage.neutral_seasons << fall
 
 golden_pumpkin = Crop.create(
   name: "golden pumpkin",
@@ -237,6 +272,8 @@ golden_pumpkin = Crop.create(
 )
 golden_pumpkin.liked_seasons << winter
 golden_pumpkin.hated_seasons << summer
+golden_pumpkin.neutral_seasons << spring
+golden_pumpkin.neutral_seasons << fall
 
 golden_potato = Crop.create(
   name: "golden potato",
@@ -247,6 +284,8 @@ golden_potato = Crop.create(
 )
 golden_potato.liked_seasons << winter
 golden_potato.hated_seasons << summer
+golden_potato.neutral_seasons << spring
+golden_potato.neutral_seasons << fall
 
 golden_turnip = Crop.create(
   name: "golden turnip",
@@ -257,6 +296,8 @@ golden_turnip = Crop.create(
 )
 golden_turnip.liked_seasons << winter
 golden_turnip.hated_seasons << summer
+golden_turnip.neutral_seasons << spring
+golden_turnip.neutral_seasons << fall
 
 strawberry = Crop.create(
   name: "strawberry",
@@ -267,6 +308,8 @@ strawberry = Crop.create(
 )
 strawberry.liked_seasons << spring
 strawberry.liked_seasons << fall
+strawberry.neutral_seasons << summer
+strawberry.neutral_seasons << winter
 
 pineapple = Crop.create(
   name: "pineapple",
