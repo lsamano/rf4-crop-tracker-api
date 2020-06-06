@@ -433,6 +433,8 @@ toyherb = Flower.create(
 )
 toyherb.liked_seasons << spring
 toyherb.hated_seasons << winter
+toyherb.neutral_seasons << summer
+toyherb.neutral_seasons << fall
 
 moondrop = Flower.create(
   name: "moondrop",
@@ -443,6 +445,7 @@ moondrop = Flower.create(
 moondrop.liked_seasons << spring
 moondrop.liked_seasons << fall
 moondrop.hated_seasons << winter
+moondrop.neutral_seasons << summer
 
 pink_cat = Flower.create(
   name: "pink cat",
@@ -452,6 +455,8 @@ pink_cat = Flower.create(
 )
 pink_cat.liked_seasons << summer
 pink_cat.hated_seasons << winter
+pink_cat.neutral_seasons << spring
+pink_cat.neutral_seasons << fall
 
 charm_blue = Flower.create(
   name: "charm blue",
@@ -461,6 +466,8 @@ charm_blue = Flower.create(
 )
 charm_blue.liked_seasons << fall
 charm_blue.hated_seasons << winter
+charm_blue.neutral_seasons << spring
+charm_blue.neutral_seasons << summer
 
 cherry_grass = Flower.create(
   name: "cherry grass",
@@ -470,6 +477,8 @@ cherry_grass = Flower.create(
 )
 cherry_grass.liked_seasons << spring
 cherry_grass.hated_seasons << winter
+cherry_grass.neutral_seasons << summer
+cherry_grass.neutral_seasons << fall
 
 lamp_grass = Flower.create(
   name: "lamp grass",
@@ -478,6 +487,9 @@ lamp_grass = Flower.create(
   img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/5/5a/RF3Lamp_Grass.png/revision/latest?cb=20190105000419"
 )
 lamp_grass.liked_seasons << winter
+lamp_grass.neutral_seasons << spring
+lamp_grass.neutral_seasons << summer
+lamp_grass.neutral_seasons << fall
 
 ironleaf = Flower.create(
   name: "ironleaf",
@@ -487,6 +499,8 @@ ironleaf = Flower.create(
 )
 ironleaf.liked_seasons << winter
 ironleaf.hated_seasons << summer
+ironleaf.neutral_seasons << spring
+ironleaf.neutral_seasons << fall
 
 four_leaf_clover = Flower.create(
   name: "4-leaf clover",
@@ -497,6 +511,7 @@ four_leaf_clover = Flower.create(
 four_leaf_clover.liked_seasons << spring
 four_leaf_clover.liked_seasons << fall
 four_leaf_clover.hated_seasons << summer
+four_leaf_clover.neutral_seasons << winter
 
 fireflower = Flower.create(
   name: "fireflower",
@@ -506,6 +521,8 @@ fireflower = Flower.create(
 )
 fireflower.liked_seasons << summer
 fireflower.hated_seasons << winter
+fireflower.neutral_seasons << spring
+fireflower.neutral_seasons << fall
 
 noel_grass = Flower.create(
   name: "noel grass",
@@ -515,6 +532,8 @@ noel_grass = Flower.create(
 )
 noel_grass.liked_seasons << winter
 noel_grass.hated_seasons << summer
+noel_grass.neutral_seasons << spring
+noel_grass.neutral_seasons << fall
 
 autumn_grass = Flower.create(
   name: "autumn grass",
@@ -524,6 +543,8 @@ autumn_grass = Flower.create(
 )
 autumn_grass.liked_seasons << fall
 autumn_grass.hated_seasons << winter
+autumn_grass.neutral_seasons << spring
+autumn_grass.neutral_seasons << summer
 
 pom_pom_grass = Flower.create(
   name: "pom-pom grass",
@@ -533,6 +554,8 @@ pom_pom_grass = Flower.create(
 )
 pom_pom_grass.liked_seasons << fall
 pom_pom_grass.hated_seasons << winter
+pom_pom_grass.neutral_seasons << spring
+pom_pom_grass.neutral_seasons << summer
 
 blue_crystal = Flower.create(
   name: "blue crystal",
@@ -584,5 +607,9 @@ emery_flower = Flower.create(
   harvest_amount: 2,
   img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/1/1e/RF3Emery_Flower.png/revision/latest?cb=20190105000051"
 )
+emery_flower.neutral_seasons << spring
+emery_flower.neutral_seasons << summer
+emery_flower.neutral_seasons << fall
+emery_flower.neutral_seasons << winter
 
 puts "Flowers seeded."
