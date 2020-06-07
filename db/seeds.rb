@@ -251,7 +251,7 @@ hot_hot_fruit = Crop.create(
 hot_hot_fruit.liked_seasons << winter
 hot_hot_fruit.hated_seasons << summer
 hot_hot_fruit.neutral_seasons << fall
-hot_hot_fruit.neutral_seasons << winter
+hot_hot_fruit.neutral_seasons << spring
 
 golden_cabbage = Crop.create(
   name: "golden cabbage",
