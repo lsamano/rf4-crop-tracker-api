@@ -341,7 +341,7 @@ grapes = Crop.create(
   grow_time: 50,
   harvest_amount: 5,
   regrows: true,
-  img_url: ""
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/d/de/RF4Grape_Tree_Seed.png/revision/latest?cb=20200425151900"
 )
 grapes.hated_seasons << winter
 grapes.liked_seasons << trees
@@ -371,7 +371,7 @@ twinkle_tree = Crop.create(
   grow_time: 38,
   harvest_amount: 0,
   regrows: false,
-  img_url: ""
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/8/81/RF4Shining_Seed.png/revision/latest?cb=20200425151657"
 )
 twinkle_tree.hated_seasons << winter
 twinkle_tree.liked_seasons << trees
@@ -399,7 +399,7 @@ dungeon_flower = Crop.create(
   grow_time: 18,
   harvest_amount: 1,
   regrows: false,
-  img_url: ""
+  img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/4/43/RF4Dungeon_Seed.png/revision/latest?cb=20200425151930"
 )
 dungeon_flower.liked_seasons << year_round
 
