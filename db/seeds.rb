@@ -589,9 +589,6 @@ emery_flower = Flower.create(
   harvest_amount: 2,
   img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/1/1e/RF3Emery_Flower.png/revision/latest?cb=20190105000051"
 )
-emery_flower.neutral_seasons << spring
-emery_flower.neutral_seasons << summer
-emery_flower.neutral_seasons << fall
-emery_flower.neutral_seasons << winter
+emery_flower.liked_seasons << year_round
 
 puts "Flowers seeded."

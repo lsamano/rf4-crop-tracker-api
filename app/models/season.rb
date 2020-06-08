@@ -11,10 +11,4 @@ class Season < ApplicationRecord
   has_many :neutral_crops, through: :neutrals, source: :neutrable, source_type: "Crop"
   has_many :neutral_flowers, through: :neutrals, source: :neutrable, source_type: "Flower"
 
-  # def neutrals
-  #   # search all crops, if crop does NOT have season listed as hated or liked, keep
-  #   Crop.all.select do |crop|
-  #
-  #   end
-  # end
 end
