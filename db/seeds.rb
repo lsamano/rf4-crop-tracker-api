@@ -20,6 +20,7 @@ fall = Season.create(name: "fall")
 winter = Season.create(name: "winter")
 year_round = Season.create(name: "year_round")
 trees = Season.create(name: "trees")
+all = Season.create(name: "all")
 
 puts "Seeded Seasons."
 
@@ -403,6 +404,8 @@ dungeon_flower = Crop.create(
 )
 dungeon_flower.liked_seasons << year_round
 
+Crop.all.each { |crop| crop.liked_seasons << all }
+
 puts "Crops Seeded."
 
 #############################################
@@ -590,5 +593,7 @@ emery_flower = Flower.create(
   img_url: "https://vignette.wikia.nocookie.net/harvestmoonrunefactory/images/1/1e/RF3Emery_Flower.png/revision/latest?cb=20190105000051"
 )
 emery_flower.liked_seasons << year_round
+
+Flower.all.each { |flower| flower.liked_seasons << all }
 
 puts "Flowers seeded."
