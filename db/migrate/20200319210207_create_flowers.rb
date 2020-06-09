@@ -4,7 +4,6 @@ class CreateFlowers < ActiveRecord::Migration[6.0]
       t.string :name
       t.integer :harvest_amount
       t.integer :grow_time
-      t.integer :store_level
       t.string :img_url
 
       # t.timestamps
