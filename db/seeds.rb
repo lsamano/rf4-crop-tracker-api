@@ -18,7 +18,7 @@ spring = Season.create(name: "spring")
 summer = Season.create(name: "summer")
 fall = Season.create(name: "fall")
 winter = Season.create(name: "winter")
-year_round = Season.create(name: "year_round")
+year_round = Season.create(name: "year-round")
 trees = Season.create(name: "trees")
 all = Season.create(name: "all")
 

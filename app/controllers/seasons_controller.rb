@@ -7,7 +7,8 @@ class SeasonsController < ApplicationController
   end
 
   def show
-    season = Season.find_by_name(params[:name])
+    sql_query = "replace(replace(name, ' ', '_'), '-', '_') like ?"
+    season = Season.where(sql_query, params[:name])
     render json: season, include: [
       :liked_crops, :hated_crops, :liked_flowers, :hated_flowers, :neutral_crops, :neutral_flowers
     ]
