@@ -1,5 +1,7 @@
 # Rune Factory 4 Special - Crop Tracker
-A personal API listing all crops and flowers found in-game.
+A mini API listing all crops and flowers found in-game.
+
+Link to the Frontend Repository [here](https://github.com/lsamano/rf4-crop-tracker-client).
 
 # Setup
 As this is a Rails app, run
