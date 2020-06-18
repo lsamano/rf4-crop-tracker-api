@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   get "/seasons/:name", to: "seasons#show"
   get "/crops/:name", to: "crops#show"
   get "/flowers/:name", to: "flowers#show"
-  patch "/crops/update-level", to: "crops#update_level"
+  get "/likes/all_in_seasons", to: "likes#all_in_seasons"
+
+  # patch "/crops/update-level", to: "crops#update_level"
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
