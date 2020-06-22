@@ -1,0 +1,11 @@
+class HatesController < ApplicationController
+  def all_in_seasons
+    final_data = {}
+    Season.all.each do |season|
+      if season.name == "spring" || season.name == "summer" || season.name == "fall" || season.name == "winter"
+        final_data[season.name] = season.hated_crops + season.hated_flowers
+      end
+    end
+    render json: final_data
+  end
+end

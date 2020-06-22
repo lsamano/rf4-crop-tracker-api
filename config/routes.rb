@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get "/crops/:name", to: "crops#show"
   get "/flowers/:name", to: "flowers#show"
   get "/likes/all_in_seasons", to: "likes#all_in_seasons"
+  get "/hates/all_in_seasons", to: "hates#all_in_seasons"
 
   # patch "/crops/update-level", to: "crops#update_level"
 
