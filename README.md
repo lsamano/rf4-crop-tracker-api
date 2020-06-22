@@ -50,3 +50,8 @@ View a single flower by name and its liked/hated/neutral seasons. Names are slug
 View only the liked crops for all four seasons.
 
 `localhost:3000/likes/all_in_seasons`
+
+## /hates/all_in_seasons
+View only the hated crops for all four seasons.
+
+`localhost:3000/hates/all_in_seasons`
