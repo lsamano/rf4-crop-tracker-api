@@ -45,3 +45,8 @@ View a list of all flowers and their liked/hated/neutral seasons.
 View a single flower by name and its liked/hated/neutral seasons. Names are slugified.
 
 `localhost:3000/crops/noel_grass`
+
+## /likes/all_in_seasons
+View only the liked crops for all four seasons.
+
+`localhost:3000/likes/all_in_seasons`
